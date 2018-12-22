@@ -1,0 +1,24 @@
+{
+  "name": "catmarket",
+  "version": "0.0.1",
+  "description": "Coursera cat market",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel watch src/index.html --hmr-hostname=localhost --hmr-port=35730"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyas/catmarket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyas/catmarket/issues"
+  },
+  "homepage": "https://github.com/heyas/catmarket#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3",
+    "sass": "^1.15.2"
+  }
+}

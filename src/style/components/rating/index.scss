@@ -1,0 +1,195 @@
+.ratings {
+  position: relative;
+  height: 40px;
+  &:before {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    content:"";
+    z-index: -300;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/assets/rating/0.svg');
+  }
+
+  label {
+    font-size: 40px;
+    color: gray;
+    font-family: Arial;
+    color: rosybrown;
+    display: block;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    span {
+      position: absolute;
+      width: 200px;
+      height: 40px;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: none;
+    }
+    &:hover {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+.rating__item {
+  position: absolute;
+  left: -10000px;
+  &:before {
+    position: absolute;
+    left: calc(10000px - 3px);
+    width: 200px;
+    height: 40px;
+    display: none;
+    content:"";
+    top: -3px;
+    z-index: -101;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &:checked {
+    &:before {
+      display: block;
+    }
+  }
+  &_label_1 {
+    left: 0px;
+    span {
+      z-index: -101;
+      background-image: url('/assets/rating/1.svg');
+    }
+  }
+  &_label_2 {
+    left: 20px;
+    span {
+      left: -20px;
+      z-index: -102;
+      background-image: url('/assets/rating/2.svg');
+    }
+  }
+  &_label_3 {
+    left: 40px;
+    span {
+      left: -40px;
+      z-index: -103;
+      background-image: url('/assets/rating/3.svg');
+    }
+  }
+  &_label_4 {
+    left: 60px;
+    span {
+      left: -60px;
+      z-index: -104;
+      background-image: url('/assets/rating/4.svg');
+    }
+  }
+  &_label_5 {
+    left: 80px;
+    span {
+      left: -80px;
+      z-index: -105;
+      background-image: url('/assets/rating/5.svg');
+    }
+  }
+  &_label_6 {
+    left: 100px;
+    span {
+      left: -100px;
+      z-index: -106;
+      background-image: url('/assets/rating/6.svg');
+    }
+  }
+  &_label_7 {
+    left: 120px;
+    span {
+      left: -120px;
+      z-index: -107;
+      background-image: url('/assets/rating/7.svg');
+    }
+  }
+  &_label_8 {
+    left: 140px;
+    span {
+      left: -140px;
+      z-index: -108;
+      background-image: url('/assets/rating/8.svg');
+    }
+  }
+  &_label_9 {
+    left: 160px;
+    span {
+      left: -160px;
+      z-index: -109;
+      background-image: url('/assets/rating/9.svg');
+    }
+  }
+  &_label_10 {
+    left: 180px;
+    span {
+      left: -180px;
+      z-index: -110;
+      background-image: url('/assets/rating/10.svg');
+    }
+  }
+  &_1:before {
+    z-index: -191;
+    background-image: url('/assets/rating/1.svg');
+  }
+  &_2:before {
+    left: calc(9997px - 20px);
+    z-index: -192;
+    background-image: url('/assets/rating/2.svg');
+  }
+  &_3:before {
+    left: calc(9997px - 40px);
+    z-index: -193;
+    background-image: url('/assets/rating/3.svg');
+  }
+  &_4:before {
+    left: calc(9997px - 60px);
+    z-index: -194;
+    background-image: url('/assets/rating/4.svg');
+  }
+  &_5:before {
+    left: calc(9997px - 80px);
+    z-index: -195;
+    background-image: url('/assets/rating/5.svg');
+  }
+  &_6:before {
+    left: calc(9997px - 100px);
+    z-index: -196;
+    background-image: url('/assets/rating/6.svg');
+  }
+  &_7:before {
+    left: calc(9997px - 120px);
+    z-index: -197;
+    background-image: url('/assets/rating/7.svg');
+  }
+  &_8:before {
+    left: calc(9997px - 140px);
+    z-index: -198;
+    background-image: url('/assets/rating/8.svg');
+  }
+  &_9:before {
+    left: calc(9997px - 160px);
+    z-index: -199;
+    background-image: url('/assets/rating/9.svg');
+  }
+  &_10:before {
+    left: calc(9997px - 180px);
+    z-index: -200;
+    background-image: url('/assets/rating/10.svg');
+  }
+
+}
+
+.rating {
+  position: absolute;
+  left: -10000px;
+}
