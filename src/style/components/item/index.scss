@@ -35,8 +35,15 @@
   }
 
   &__price {
-    font-size: 28px;
-    font-weight: 600;
-    color: darkred;
+    &-current {
+      font-size: 28px;
+      font-weight: 600;
+      color: darkred;
+      display: inline-block;
+    }
+    &-old {
+      text-decoration: line-through;
+      display: inline-block;
+    }
   }
 }
